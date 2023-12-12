@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>templates/friends.html</title>
+</head>
+<body>
+<h3>친구 목록입니다.</h3>
+<ul>
+	{% for item in friends %}
+		<li>{{item}}</li>
+	{% endfor %}
+</ul>
+</body>
+</html>

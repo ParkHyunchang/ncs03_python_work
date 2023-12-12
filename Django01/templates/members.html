@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>templates/members.html</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css" />
+</head>
+<body>
+<div class="container">
+	<h3>회원목록 입니다.</h3>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<td>번호</td>
+				<td>이름</td>
+				<td>주소</td>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in members %}
+			<tr>
+				<td>{{item.num}}</td>
+				<td>{{item.name}}</td>
+				<td>{{item.addr}}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
